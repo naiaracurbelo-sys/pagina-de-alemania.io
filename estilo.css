@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding-top: 70px;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.menu-superior {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #910a0a;
+    padding: 10px 20px;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-flotante {
+    height: 40px;
+    width: auto;
+    display: block;
+}
+
+.menu-superior ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.menu-superior a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.menu-superior a:hover {
+    color: #ffcc00;
+}
+
+.hero-banner {
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.titulo-banner {
+    color: #000;
+    padding: 10px 0;
+    margin: 0;
+    font-size: 2rem;
+}
+
+.hero-section {
+    text-align: center;
+    padding: 30px 20px;
+    scroll-margin-top: 80px;
+}
+
+.hero-imagen {
+    width: 90%;
+    max-width: 1200px;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 40px 20px;
+    border-radius: 20px;
+    background: linear-gradient(
+        to bottom,
+        #000000 0%,
+        #000000 33%,
+        #dd0000 33%,
+        #dd0000 66%,
+        #ffce00 66%,
+        #ffce00 100%
+    );
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.25);
+    scroll-margin-top: 80px;
+}
+
+.btn-ubicacion {
+    display: inline-block;
+    background-color: #000000;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-ubicacion:hover {
+    background-color: #333333;
+    transform: translateY(-2px);
+}
+
+.informacion-pais {
+    width: 90%;
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 35px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    text-align: center;
+    box-sizing: border-box;
+    scroll-margin-top: 80px;
+}
+
+.informacion-pais h2 {
+    color: #d40000;
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+.informacion-pais p {
+    line-height: 1.7;
+    font-size: 1.05rem;
+}
+
+.datos-pais {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.dato {
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #f4f4f9;
+    border-top: 5px solid #d40000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.dato h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.dato p {
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+
+.tema {
+    width: 90%;
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 35px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    box-sizing: border-box;
+    scroll-margin-top: 80px;
+}
+
+.subtitulo h2 {
+    color: #d40000;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 0;
+    border-bottom: 3px solid #ffce00;
+    display: inline-block;
+    padding-bottom: 8px;
+}
+
+.subtitulo {
+    text-align: center;
+}
+
+.contenido-cultura > p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.contenido-cultura ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contenido-cultura li {
+    background-color: #f9f9fc;
+    border-left: 5px solid #910a0a;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 0 12px 12px 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.contenido-cultura li h3 {
+    margin: 0 0 8px 0;
+    color: #910a0a;
+    font-size: 1.2rem;
+}
+
+.contenido-cultura li p {
+    margin: 0;
+    line-height: 1.6;
+    color: #444;
+}
+
+.contenido-cultura li img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 15px;
+    border-radius: 8px;
+}
+
+.contenido-cultura em {
+    font-weight: bold;
+    color: #b81010;
+    font-style: normal;
+}
+
+
+.galeria-cultura {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 35px;
+}
+
+.foto-cultura {
+    margin: 0;
+    background-color: #f4f4f9;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.foto-cultura img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.foto-cultura figcaption {
+    padding: 12px;
+    font-weight: bold;
+    color: #333;
+    font-size: 0.95rem;
+}
+
+
+.galeria-comidas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    margin-top: 35px;
+}
+
+.comida {
+    background-color: #f9f9fc;
+    border-radius: 12px;
+    padding: 12px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.comida:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.imagen-galeria {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.imagen-galeria:hover {
+    opacity: 0.9;
+}
+
+.comida p {
+    margin: 10px 0 5px 0;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #333;
+}
+
+
+.contenedor-lugares {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.caja-lugar {
+    background-color: #f9f9fc;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.caja-lugar:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.caja-lugar h3 {
+    color: #910a0a;
+    margin-top: 0;
+    font-size: 1.3rem;
+}
+
+.caja-lugar p {
+    line-height: 1.6;
+    color: #444;
+    flex-grow: 1;
+}
+
+.caja-lugar img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+
+.bloque-futbol .contenido-bloque {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 25px;
+    background-color: #f9f9fc;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.imagen-futbol {
+    width: 350px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.bloque-futbol .texto p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin: 0;
+    color: #444;
+}
+
+
+.lista-consejos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.consejo-item {
+    background-color: #f9f9fc;
+    border-top: 4px solid #910a0a;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.consejo-item h3 {
+    margin-top: 0;
+    color: #910a0a;
+    font-size: 1.2rem;
+}
+
+.consejo-item p {
+    margin: 0;
+    line-height: 1.6;
+    color: #444;
+}
+
+
+@media (max-width: 800px) {
+    .menu-superior {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 10px;
+    }
+
+    .menu-superior ul {
+        gap: 10px;
+    }
+
+    .datos-pais {
+        grid-template-columns: 1fr;
+    }
+
+    .galeria-comidas {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    }
+
+    .contenedor-lugares {
+        grid-template-columns: 1fr;
+    }
+
+    .bloque-futbol .contenido-bloque {
+        flex-direction: column;
+    }
+
+    .imagen-futbol {
+        width: 100%;
+        height: auto;
+    }
+
+    .hero-imagen {
+        height: 300px;
+    }
+}
